@@ -2,16 +2,18 @@
 
 ## Table of contents
 
-* [Contributing](#contributing)
-* [Writing proper commits - short version](#writing-proper-commits-short-version)
-* [Writing proper commits - long version](#writing-proper-commits-long-version)
-* [Dependencies](#dependencies)
-  * [Note for OS X users](#note-for-os-x-users)
-* [The test matrix](#the-test-matrix)
-* [Syntax and style](#syntax-and-style)
-* [Running the unit tests](#running-the-unit-tests)
-* [Unit tests in docker](#unit-tests-in-docker)
-* [Integration tests](#integration-tests)
+- [Contribution guidelines](#contribution-guidelines)
+  - [Table of contents](#table-of-contents)
+  - [Contributing](#contributing)
+  - [Writing proper commits - short version](#writing-proper-commits---short-version)
+  - [Writing proper commits - long version](#writing-proper-commits---long-version)
+  - [Dependencies](#dependencies)
+    - [Note for OS X users](#note-for-os-x-users)
+  - [The test matrix](#the-test-matrix)
+    - [Syntax and style](#syntax-and-style)
+    - [Running the unit tests](#running-the-unit-tests)
+      - [Unit tests in docker](#unit-tests-in-docker)
+    - [Integration tests](#integration-tests)
 
 This module has grown over time based on a range of contributions from
 people using it. If you follow these contributing guidelines your patch
@@ -242,15 +244,16 @@ simple tests against it after applying the module. You can run this
 with:
 
 ```sh
-BEAKER_PUPPET_COLLECTION=puppet7 BEAKER_setfile=debian11-64 bundle exec rake beaker
+BEAKER_PUPPET_COLLECTION=puppet7 BEAKER_setfile=debian12-64 bundle exec rake beaker
 ```
 
-You can replace the string `debian11` with any common operating system.
+You can replace the string `debian12` with any common operating system.
 The following strings are known to work:
 
 * ubuntu2004
 * ubuntu2204
 * debian11
+* debian12
 * centos7
 * centos8
 * centos9
